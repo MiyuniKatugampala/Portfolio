@@ -53,3 +53,8 @@ header {
     font-weight: 600;
     transition: 1.3s ease;
 }
+.contact:hover {
+    background-color: rgb(14, 0, 90);
+    box-shadow: 0 0;
+    color: white;
+}

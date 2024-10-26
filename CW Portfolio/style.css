@@ -38,3 +38,7 @@ header {
     display: inline;
     padding: 15px;
 }
+.navList a:hover {
+    color: pink;
+    border-bottom: 3px solid pink;
+}

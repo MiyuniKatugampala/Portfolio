@@ -22,13 +22,18 @@ header {
 }
 
 .logo {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: xx-large;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
     color: rgb(233, 210, 252)
 }
 
 .logo span {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
     color: rgb(217, 180, 247)
 }
 

@@ -47,7 +47,7 @@ header {
     color: pink;
     border-bottom: 3px solid pink;
 }
-.contact {
+.register {
     padding: 10px 28px;
     background-color: white;
     color: black;
@@ -58,7 +58,7 @@ header {
     font-weight: 600;
     transition: 1.3s ease;
 }
-.contact:hover {
+.register:hover {
     background-color: rgb(14, 0, 90);
     box-shadow: 0 0;
     color: white;

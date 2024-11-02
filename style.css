@@ -6,6 +6,7 @@
     text-decoration: none;
 }
 
+/* “CSS Gradient Animator.” Www.gradient-Animator.com, www.gradient-animator.com/. */
 body{
     background: linear-gradient(302deg, #4d0084, #510063, #2f004f, #6a00b2, #f060ff);
     background-size: 1000% 1000%;
@@ -36,21 +37,23 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 35px 10%;
-    background: rgba(0, 0, 0, 0.5) ;
+    padding: 35px 8%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: rgba(0, 0, 0, 0.3) ;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-
 }
+
 
 .logo {
     font-family: "Pacifico", cursive;
-    font-weight: 400;
+    font-weight: 400;    
     font-style: normal;
-    font-size: 300%;
+    font-size: 50px;
     color: rgb(233, 210, 252)
 }
 
@@ -73,7 +76,7 @@ header {
     border-bottom: 3px solid pink;
 }
 .register {
-    margin-right: 20px;
+
     padding: 10px 28px;
     background-color: white;
     color: rgb(55, 0, 70);
@@ -88,10 +91,11 @@ header {
     transition: 1.3s ease;
 }
 .register:hover {
-    border:3px solid black ;
+    border:2px solid black ;
     background-color: pink;
     box-shadow: 0 0;
-    color: white;
+    font-weight: 600;
+    color: rgb(36, 0, 69);
 }
 
 
@@ -144,4 +148,47 @@ header {
 
 ::-webkit-scrollbar-track {
     background-color: rgb(64, 0, 83);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: #3e1656;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social-links li {
+    margin: 0 10px;
+}
+
+.footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .social-links a:hover {
+    text-decoration: underline;
 }

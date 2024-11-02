@@ -6,13 +6,38 @@
     text-decoration: none;
 }
 
+body{
+    background: linear-gradient(302deg, #4d0084, #510063, #2f004f, #6a00b2, #f060ff);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 40s ease infinite;
+    -moz-animation: AnimationName 40s ease infinite;
+    animation: AnimationName 40s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 35px 10%;
-    background: rgb(76, 0, 97);
+    background: rgba(0, 0, 0, 0.5) ;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -66,18 +91,17 @@ header {
     border:3px solid black ;
     background-color: pink;
     box-shadow: 0 0;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 
 .introduction {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(39, 15, 58);
     display: flex;
     align-items: center;
     gap: 7em;
-    color: rgb(199, 186, 202);
+    color: rgb(255, 255, 255);
 }
 
 .home-content {

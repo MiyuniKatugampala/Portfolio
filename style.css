@@ -189,6 +189,11 @@ header {
     font-size: 18px;
     margin: 25px 0 30px;
 }
+.introduction img{
+    display: flex;
+    width: 400px;
+    border-radius: 60%;
+}
 
 ::-webkit-scrollbar {
     width: 15px;

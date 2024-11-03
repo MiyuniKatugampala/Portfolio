@@ -8,28 +8,28 @@
 
 /* “CSS Gradient Animator.” Www.gradient-Animator.com, www.gradient-animator.com/. */
 body{
-    background: linear-gradient(302deg, #4d0084, #510063, #2f004f, #6a00b2, #f060ff);
+    background: linear-gradient(129deg, #58007e, #3f006d, #a200d3, #4e00c2, #9400a1);
     background-size: 1000% 1000%;
 
-    -webkit-animation: AnimationName 40s ease infinite;
-    -moz-animation: AnimationName 40s ease infinite;
-    animation: AnimationName 40s ease infinite;
+    -webkit-animation: AnimationName 50s ease infinite;
+    -moz-animation: AnimationName 50s ease infinite;
+    animation: AnimationName 50s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:48% 0%}
-    50%{background-position:53% 100%}
-    100%{background-position:48% 0%}
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:48% 0%}
-    50%{background-position:53% 100%}
-    100%{background-position:48% 0%}
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
 }
 @keyframes AnimationName {
-    0%{background-position:48% 0%}
-    50%{background-position:53% 100%}
-    100%{background-position:48% 0%}
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
 }
 
 header {
@@ -109,8 +109,8 @@ header {
 }
 
 .home-content {
-    margin-left: 10%;
-    margin-right: 20%;
+    margin-left: 7%;
+    margin-right: 35%;
 }
 
 .home-content h3 {
@@ -131,11 +131,31 @@ header {
     font-size: 50px;
 }
 .home-content p {
+
     font-family: "Fira Code", monospace;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 18px;
     margin: 25px 0 30px;
+}
+.twitter{
+    margin-left: ;
+    width: 25%;
+    padding: 30px 28px;
+    background-color: rgb(200, 237, 255);
+    backdrop-filter: blur(10px);
+    color: rgb(0, 0, 0);
+    border: 5px solid transparent;
+    border-radius: 8px;
+}
+.twitter h3{
+    display: relative;
+    font-size: 20px;
+}
+.twitter img{
+    margin-left: 20px;
+    display: relative;
+    width: 20px;
 }
 
 ::-webkit-scrollbar {
@@ -149,14 +169,10 @@ header {
 ::-webkit-scrollbar-track {
     background-color: rgb(64, 0, 83);
 }
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
 
 .footer {
-    background-color: #3e1656;
+    background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
     padding: 20px 0;
     text-align: center;

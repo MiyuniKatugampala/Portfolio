@@ -76,7 +76,7 @@ header {
     /* Pseudo-Elements with Generated Content */
     .logo::after {
         content: " K.";
-        font-size: 10%;
+        font-size: 50%;
         color: white;
     }
     .logo :hover{
@@ -112,6 +112,10 @@ header {
     /* Nth Pseudo-Class / structural selector*/
     .navList a:nth-child(1) {
         color: rgb(185, 177, 255);
+    }
+    .active{
+        border-bottom: 3px solid pink;
+        
     }
 
 
@@ -199,6 +203,7 @@ header {
 /* MAIN PAGE */
 
 /* the side social links */
+
     .social-links {
         position: fixed;
         left: 0;
@@ -230,7 +235,6 @@ header {
     }
 
 
-
 .introduction {
     margin-top: 3%;
     width: 100%;
@@ -245,15 +249,17 @@ header {
 .home-content {
     margin-left: 7%;
 }
+/* Welcome to my Portfolio */
 .home-content h1{
     margin-left: o;
+    color: #b6e8ff;
     font-family: "Satisfy", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 45px;
     padding-bottom: 20px;
 }
-
+/* Hi, I'm */
 .home-content h2 {
     margin-left: 5%;
     font-family: "Montserrat", sans-serif;
@@ -261,6 +267,8 @@ header {
     font-weight: 500;
     font-size: 32px;
 }
+
+/* Miyuni Katugampala<br><span>Sofware Engineer</span> */
 .home-content h3 {
     font-family: "Abril Fatface", serif;
     font-weight: 400;
@@ -292,13 +300,122 @@ header {
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-center;
+    }
+
+    .navList {
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navList a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .social-links {
+        margin-top: 95%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .introduction {
+        margin-top: 45%;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .home-content {
+        margin-left: 0;
+        text-align: center;
+    }
+    .home-content{
+        width: 90%;
+    }
+
+    .introduction img {
+        width: 60%;
+        margin-right: 0;
+    }
+    .register {
+        margin-top: 25px; /* This will lower the button */
+        /* other styles remain unchanged */
+    }
+    footer{
+        margin-top: 40px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+    .navList a {
+        padding: 12px;
+    }
+
+    .introduction {
+        gap: 5em;
+    }
+
+    .home-content h1 {
+        font-size: 38px;
+    }
+
+    .home-content h2 {
+        font-size: 28px;
+    }
+
+    .home-content h3 {
+        font-size: 48px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .introduction img {
+        width: 50%;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    .home-content h1 {
+        font-size: 45px;
+    }
+
+    .home-content h2 {
+        font-size: 32px;
+    }
+
+    .home-content h3 {
+        font-size: 55px;
+    }
+
+    .home-content p {
+        font-size: 18px;
+    }
+
+    .introduction img {
+        width: 30%;
+    }
+}
 
 /* ------------------------------------------------------------------------------- */
 /* ABOUT PAGE */
 .about-content{
     margin-top: 4%;
     margin-left: 4%;
-    margin-right: 4%;
+    margin-right: 0;
 }
 .about{
     width: 100%;
@@ -312,6 +429,7 @@ header {
 }
 
 .about h4{
+    color: #b6e8ff;
     margin-left: 5%;
     font-family: "Satisfy", cursive;
     font-weight: 400;
@@ -338,11 +456,72 @@ header {
 .about img{
     display: flex;
     margin-top: 0;
-    margin-right: 8%;
-    width: 350px;
+    margin-right: 4%;
+    width:25%;
     border-radius: 10%;
 }
+@media (max-width: 768px) {
 
+    .about {
+        margin-top: 30%;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .about-content {
+        width: 90%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .about img {
+        width: 60%; /* Adjust image size for mobile */
+        margin-right: 0;
+    }
+
+    .register {
+        margin-top: 5%; /* Lower the newsletter button */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        padding: 1.5%;
+    }
+
+    .navList a {
+        padding: 12px;
+    }
+
+    .about {
+        gap: 5em;
+    }
+
+    .about img {
+        width: 50%; /* Adjust image size for tablet */
+    }
+
+    .register {
+        margin-top: 20px; /* Lower the newsletter button */
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    .about {
+        gap: 6em; /* Maintain gap for larger screens */
+    }
+
+    .about img {
+        width: 25%; /* Maintain original size for desktop */
+    }
+
+    .register {
+        margin-top: 20px; /* Lower the newsletter button */
+    }
+}
 /* ----------------------------------------------------------------- */
 /* NEWSLETTER REGISTER */
 .register-logo {
@@ -496,5 +675,14 @@ BLOG PAGE */
 .post-date {
     color: #888;
     font-size: 0.9em;
+}
+@media (max-width: 768px) {
+    .blog-page{
+        text-align: center;
+        margin-top: 35%;
+    }
+    .blog-page-title h1{
+        font-size: 45px;
+    }
 }
 

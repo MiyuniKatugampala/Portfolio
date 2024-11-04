@@ -9,6 +9,12 @@
 a[href^="https"] {
     color: rgb(255, 0, 89);
 }
+input[placeholder] {
+    color: #888;
+    font-style: italic;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
 
 /* “CSS Gradient Animator.” Www.gradient-Animator.com, www.gradient-animator.com/. */
     body{

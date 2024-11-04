@@ -50,30 +50,37 @@ header {
     z-index: 100;
 }
 
-
-.logo {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;    
-    font-style: normal;
-    font-size: 50px;
-    color: rgb(233, 210, 252)
-}
-
-.logo span {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-optical-sizing: auto;
-    color: rgb(217, 180, 247)
-}
-
-
 /* The navigationbar with the logo */
+    .logo {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;    
+        font-style: normal;
+        font-size: 50px;
+        color: rgb(233, 210, 252)
+    }
+
+    .logo span {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-optical-sizing: auto;
+        color: rgb(217, 180, 247)
+    }
+
+
+
     /* Pseudo-Elements with Generated Content */
     .logo::after {
         content: " K.";
         font-size: 20px;
         color: white;
+    }
+    .logo :hover{
+        font-family: "Pacifico", cursive;
+        font-weight: 400;    
+        font-style: normal;
+        color: rgb(194, 133, 245);
+        font-size: 53px;
     }
 
     .navList a {
@@ -128,7 +135,61 @@ header {
         color: rgb(36, 0, 69);
         box-shadow: 0px 0px 10px pink;
     }
+    /* scrollbar */
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color:  rgb(64, 0, 83);
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color:#58007e;
+    }
+    
+    
+    .footer {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer p {
+        margin: 0;
+    }
+    
+    .footer .footer-social-links {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer .footer-social-links li {
+        margin: 0 10px;
+    }
+    
+    .footer .footer-social-links a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .footer .footer-social-links a:hover {
+        text-decoration: underline;
+    }
 
+
+/* ------------------------------------------------------------------------------- */
+/* MAIN PAGE */
 
 /* the side social links */
     .social-links {
@@ -160,7 +221,6 @@ header {
         width: 40px;
         height: 40px;
     }
-
 
 
 
@@ -204,9 +264,9 @@ header {
     font-size: 50px;
 }
 .home-content p {
-
     font-family: "Fira Code", monospace;
     font-optical-sizing: auto;
+    text-align: Justify;
     font-style: normal;
     font-size: 18px;
     margin: 25px 0 30px;
@@ -214,11 +274,16 @@ header {
 .introduction img{
     display: flex;
     margin-top: 4%;
-    margin-right: 7%;
-    width: 350px;
+    margin-right: 8%;
+    width: 420px;
     border-radius: 60%;
 }
+
+
+/* ------------------------------------------------------------------------------- */
+/* ABOUT PAGE */
 .about-content{
+    margin-top: 4%;
     margin-left: 4%;
     margin-right: 4%;
 }
@@ -252,58 +317,157 @@ header {
     margin-left: 5%;
     font-family: "Fira Code", monospace;
     font-optical-sizing: auto;
+    text-align: Justify;
     font-style: normal;
     font-size: 17px;
     margin: 25px 0 30px;
 }
-
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color:  rgb(64, 0, 83);
-}
-
-::-webkit-scrollbar-track {
-    background-color:#58007e;
-}
-
-
-.footer {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.footer p {
-    margin: 0;
-}
-
-.footer .footer-social-links {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
+.about img{
     display: flex;
-    justify-content: center;
+    margin-top: 0;
+    margin-right: 8%;
+    width: 350px;
+    border-radius: 10%;
 }
 
-.footer .footer-social-links li {
-    margin: 0 10px;
+/* ----------------------------------------------------------------- */
+/* NEWSLETTER REGISTER */
+.register-logo {
+    margin-top: 3%;
+    margin-left: 6%;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;    
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(233, 210, 252)
 }
 
-.footer .footer-social-links a {
-    color: #fff;
-    text-decoration: none;
+.register-logo span {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    color: rgb(217, 180, 247)
 }
 
-.footer .footer-social-links a:hover {
-    text-decoration: underline;
+
+
+/* Pseudo-Elements with Generated Content */
+.register-logo::after {
+    content: " K.";
+    font-size: 20px;
+    color: white;
 }
+.register-logo:hover{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;    
+    font-style: normal;
+    color: rgb(194, 133, 245);
+    font-size: 53px;
+}
+.register-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.register-container h1 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    color: #333;
+}
+.register-container form {
+    display: flex;
+    flex-direction: column;
+}
+.register-container label {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.register-container button {
+    margin-top: 3px;
+    padding: 15px;
+    border: none;
+    background-color: #8200b9;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.register-container button:hover {
+    padding: 16px;
+    color: black;
+    background-color: #e2b6ff;
+}
+
+/* -----------------------------------------------------------------
+BLOG PAGE */
+.blog-page {
+    margin-top: 15%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+.blog-page-title h1{
+    color: rgb(208, 239, 255);
+    margin-left: 5%;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+.blog-page-title p{
+    margin-left: 8%;
+    margin-top: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.post {
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+.post img{
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 100%;
+}
+.post-title{
+    max-width: 1000px;
+    /* margin-top: 20%; */
+    color: #333;
+}    
+
+.post-date {
+    color: #888;
+    font-size: 0.9em;
+}
+

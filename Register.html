@@ -4,121 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsletter Signup & Contact Form</title>
+    <title>Newsletter Signup</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
-        *{
-            text-decoration: none;
-        }
-        body{
-        background: linear-gradient(129deg, #58007e, #3f006d, #a200d3, #4e00c2, #9400a1);
-        background-size: 1000% 1000%;
-
-        -webkit-animation: AnimationName 50s ease infinite;
-        -moz-animation: AnimationName 50s ease infinite;
-        animation: AnimationName 50s ease infinite;
-        }
-
-        @-webkit-keyframes AnimationName {
-            0%{background-position:50% 0%}
-            50%{background-position:51% 100%}
-            100%{background-position:50% 0%}
-        }
-        @-moz-keyframes AnimationName {
-            0%{background-position:50% 0%}
-            50%{background-position:51% 100%}
-            100%{background-position:50% 0%}
-        }
-        @keyframes AnimationName {
-            0%{background-position:50% 0%}
-            50%{background-position:51% 100%}
-            100%{background-position:50% 0%}
-        }
-        .logo {
-            display: absolute;
-            margin-left: 7%;    
-            font-family: "Pacifico", cursive;
-            font-weight: 400;    
-            font-style: normal;
-            font-size: 50px;
-            color: rgb(233, 210, 252);
-            transition: all 0.3s ease;
-        }
-
-        .logo span {
-            font-family: "Pacifico", cursive;
-            font-weight: 400;
-            font-style: normal;
-            font-optical-sizing: auto;
-            color: rgb(217, 180, 247)
-        }
-        .logo :hover{
-            font-family: "Pacifico", cursive;
-            font-weight: 400;    
-            font-style: normal;
-            color: rgb(194, 133, 245);
-            font-size: 53px;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 30px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-       
-        h1 {
-            font-family: "Montserrat", sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 32px;
-            text-align: center;
-            color: #333;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        label {
-            font-family: "Montserrat", sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 15px;
-            margin-top: 10px;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        textarea,
-        select {
-            width: 95%;
-            padding: 10px;
-            margin: 5px 0 15px 0;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-        }
-        button {
-            margin-top: 3px;
-            padding: 15px;
-            border: none;
-            background-color: #8200b9;
-            color: white;
-            font-size: 16px;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-        button:hover {
-            padding: 16px;
-            color: black;
-            background-color: #e2b6ff;
-        }
     </style>
 </head>
 <body>
-        <a href="Main Page.html" class="logo"><span>Miy</span>uni</a>
+        <a href="Main Page.html" class="register-logo"><span>Miy</span>uni</a>
 
-<div class="container">
+<div class="register-container">
     <h1>Sign Up for Our Newsletter</h1>
     <form action="/submit-form" method="post">
         <label for="name">Name:</label>
@@ -151,4 +46,14 @@
 </div>
 
 </body>
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Miyuni Katugampala. All rights reserved.</p>
+        <ul class="footer-social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </div>
+</footer>
 </html>

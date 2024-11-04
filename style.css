@@ -4,12 +4,14 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+/* Attribute Selectors */
 a[href^="https"] {
     color: rgb(255, 0, 89);
 }
 
 /* “CSS Gradient Animator.” Www.gradient-Animator.com, www.gradient-animator.com/. */
     body{
+        /* gradient */
         background: linear-gradient(129deg, #58007e, #3f006d, #a200d3, #4e00c2, #9400a1);
         background-size: 1000% 1000%;
 
@@ -18,6 +20,7 @@ a[href^="https"] {
         animation: AnimationName 50s ease infinite;
     }
 
+    /* Backgorund Animations */
     @-webkit-keyframes AnimationName {
         0%{background-position:50% 0%}
         50%{background-position:51% 100%}
@@ -85,11 +88,6 @@ header {
 
     .navList a {
         font-family: sans-serif;
-        display: inline;
-        padding: 15px;
-    }
-    .navList a {
-        font-family: sans-serif;
         color: rgb(253, 250, 250);
         display: inline;
         padding: 15px;
@@ -99,16 +97,19 @@ header {
     .header .navList a {
         font-family: sans-serif;
         color: rgb(253, 250, 250);
+        display: inline;
+        padding: 15px;
     }
     .about .navList a {
         font-family: sans-serif;
         color: rgb(253, 250, 250);
     }
+    /* User Action Pseudo-class */
     .navList a:hover {
         color: pink;
         border-bottom: 3px solid pink;
     }
-    /* Nth Pseudo-Class */
+    /* Nth Pseudo-Class / structural selector*/
     .navList a:nth-child(1) {
         color: rgb(185, 177, 255);
     }
@@ -128,6 +129,7 @@ header {
         letter-spacing: 1px;
         transition: 1.3s ease;
     }
+    /* User Action Pseudo-class */
     .register:hover {
         background-color: pink;
         box-shadow: 0 0;
@@ -135,6 +137,7 @@ header {
         color: rgb(36, 0, 69);
         box-shadow: 0px 0px 10px pink;
     }
+    
     /* scrollbar */
     ::-webkit-scrollbar {
         width: 15px;
@@ -155,8 +158,9 @@ header {
         padding: 20px 0;
         text-align: center;
     }
-    
-    .footer .container {
+
+    /* child combinator */
+    .footer > .container {
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
@@ -186,6 +190,7 @@ header {
     .footer .footer-social-links a:hover {
         text-decoration: underline;
     }
+    
 
 
 /* ------------------------------------------------------------------------------- */
@@ -424,6 +429,8 @@ select {
     color: black;
     background-color: #e2b6ff;
 }
+
+/* Validity Pseudo-class */
 input:invalid {
     border: 2px solid red;
 }

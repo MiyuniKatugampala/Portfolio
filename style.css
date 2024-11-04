@@ -76,12 +76,12 @@ header {
     /* Pseudo-Elements with Generated Content */
     .logo::after {
         content: " K.";
-        font-size: 20px;
+        font-size: 10%;
         color: white;
     }
     .logo :hover{
         color: rgb(194, 133, 245);
-        font-size: 53px;
+        font-size: 55px;
         transform: scale(1.05); /* Enlarges the post slightly */
         transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
     }
@@ -144,15 +144,17 @@ header {
     }
     
     ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
         background-color:  rgb(64, 0, 83);
     }
     
     ::-webkit-scrollbar-track {
-        background-color:#58007e;
+        background-color:   rgb(147, 0, 192);
     }
     
     
     .footer {
+        width: 100%;
         background-color: rgba(0, 0, 0, 0.3);
         color: #fff;
         padding: 20px 0;
@@ -239,6 +241,7 @@ header {
     color: rgb(255, 255, 255);
 }
 
+
 .home-content {
     margin-left: 7%;
 }
@@ -280,7 +283,7 @@ header {
     margin: 25px 0 30px;
 }
 .introduction img{
-    display: flex;
+    display: relative;
     margin-top: 4%;
     margin-right: 8%;
     width: 30%;
